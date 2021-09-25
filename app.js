@@ -33,6 +33,7 @@ var allScript = [
   "components/Slide2/Slide2.js",
   "components/Slide3/Slide3.js",
   "pages/Home.js",
+  "components/Header/slide.js",
 ];
 
 var scriptLoad = {

@@ -14,7 +14,7 @@ function createHeader() {
                 </div>
             </div>
         </div>
-        <div class="btn-scroll-down">
+        <div onclick="scrollDown()" class="btn-scroll-down">
             <p>scroll down</p>
             <div class="loading-horizontaly">
                 <div class="loading-horizontaly-container">
@@ -22,7 +22,7 @@ function createHeader() {
                 </div>
             </div>
         </div>
-        <div class="header-slide swiper mySwiper">
+        <div class="header-slide">
             <div class="header-slide-text">
                 <div class="header-slide-black-container">
                     <div class="logo">
@@ -45,10 +45,10 @@ function createHeader() {
                     </div>
                 </div>
             </div>
-            <div class="header-slide-container swiper-wrapper">
-                <div class="header-slide1">
+            <div class="header-slide-container" id="header-slide-container">
+                <div class="header-slide1" id="header-slide1">
                 </div>
-                <div class="header-slide2">
+                <div class="header-slide2 hide-header" id="header-slide2">
                 </div>
             </div>
         </div>
