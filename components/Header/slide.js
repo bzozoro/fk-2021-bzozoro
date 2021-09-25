@@ -14,6 +14,7 @@ function headerAnimation(){
         console.log(header1)
         if(t == 0){
             header1[0].classList.add('hide-header');
+
             header2[0].classList.remove('hide-header');
             slider_function[0].classList.add('slider-function-container-right');
 

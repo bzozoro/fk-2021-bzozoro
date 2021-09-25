@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'Abel', sans-serif;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 
