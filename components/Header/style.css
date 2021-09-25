@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+    color: #fff;
+}
+
+
+.header-content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.header-black{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-100vh);
+    background: #000;
+    animation: translateHeader 2.8s ease-in-out;
+}
+
+@keyframes translateHeader {
+    0% {
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.header-black-container{
+    width: 100%;
+    opacity: 1;
+    animation: addOpacity 1s ease-in-out;
+}
+
+@keyframes addOpacity {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo{
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo div:first-child{
+    opacity: .5;
+    letter-spacing: 20px;
+    font-size: 1.5vw;
+}
+
+.skyline{
+    font-family: 'Six Caps', sans-serif;
+    font-size: 8vw;
+    /* font-weight: bold; */
+    letter-spacing: 25px;
+}
+
+.loading{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    animation: addOpacity 1s ease-in-out;
+}
+
+.loading-container, .loading-horizontaly-container, .slider-function-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 15%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.loading-horizontaly-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 40px;
+    height: 1px;
+}
+
+.loading-container div{
+    background-color: #fff;
+    width: 20%;
+    border-radius: 5px;
+    animation: addWidthLoading 2s .5s ease-in-out;
+}
+
+.loading-horizontaly-container div{
+    background-color: #fff;
+    width: 50%;
+    border-radius: 5px;
+}
+
+@keyframes addWidthLoading {
+    0% {
+        width: 20%;
+        height: 5px;
+    }
+    100% {
+        height: 5px;
+        width: 100%;
+    }
+}
+
+.header-slide{
+    width: 100%;
+    height: 100vh;
+}
+
+.btn-scroll-down{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.loading-horizontaly{
+    position: relative;
+    top: 30px;
+    transform:rotate(90deg);
+    width: 100%;
+}
+
+.header-slide-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    animation: addTextOpacity 5s ease-in-out;
+    z-index: 10;
+}
+
+@keyframes addTextOpacity {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.skyline-txt{
+    font-size: 1.2vw;
+    text-transform: none;
+    margin-top: 20px;
+    opacity: .5;
+}
+
+.slider-header{
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    text-align: right;
+}
+
+.slider-function-container{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 10px;
+    height: 1px;
+}
+
+.slider-function-container div{
+    width: 50%;
+    height: 100%;
+    background: #fff;
+}
+
+.header-slide-text{
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.header-slide1{
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/images/header_bg_1.jpg") center center / cover no-repeat;
+}
+
+.header-slide2{
+    width: 100vw;
+    height: 100vh;
+    background: url("../../assets/images/header_bg_2.jpg") center center / cover no-repeat;
+}
+
+.test{
+    height: 100vh;
+}
