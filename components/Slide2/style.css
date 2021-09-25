@@ -31,6 +31,7 @@
   justify-content: space-around;
   height: 100%;
   margin-right: 10px;
+  overflow: hidden;
 }
 
 .infos-s2-container .infos-s2-right {
@@ -40,6 +41,7 @@
   justify-content: space-around;
   height: 100;
   margin-left: 10px;
+  overflow: hidden;
 }
 
 .infos-s2-container .infos-s2-right span {
@@ -47,6 +49,7 @@
   height: 40px;
   display: flex;
   align-items: center;
+  transform: translateX(150vw);
 }
 
 .infos-s2-container .infos-s2-left span {
@@ -54,34 +57,59 @@
   height: 40px;
   display: flex;
   align-items: center;
+  transform: translateX(-100vw);
 }
 
-.infos-s2-container .infos-s2-left .text-left-1.animeToShow {
-  animation: slideLeftToRight 0.3 forwards;
+.text-left-1.animeToShow {
+  animation: slideLeftToRight 2s ease-in forwards;
 }
 
-.infos-s2-container .infos-s2-left .text-left-2.animeToShow {
-  animation: slideLeftToRight 0.6 ease-in forwards;
+.text-left-2.animeToShow {
+  animation: slideLeftToRight 2.05s ease-in forwards;
 }
 
-.infos-s2-container .infos-s2-left .text-left-3.animeToShow {
-  animation: slideLeftToRight 0.9 ease-in forwards;
+.text-left-3.animeToShow {
+  animation: slideLeftToRight 2.1s ease-in forwards;
 }
 
-.infos-s2-container .infos-s2-left .text-left-4.animeToShow {
-  animation: slideLeftToRight 1.2 ease-in forwards;
+.text-left-4.animeToShow {
+  animation: slideLeftToRight 2.15s ease-in forwards;
 }
 
-.infos-s2-container .infos-s2-left .text-left-5.animeToShow {
-  animation: slideLeftToRight 1.5 ease-in forwards;
+.text-left-5.animeToShow {
+  animation: slideLeftToRight 2.2s ease-in forwards;
 }
 
-.infos-s2-container .infos-s2-left .text-left-6.animeToShow {
-  animation: slideLeftToRight 1.8 ease-in forwards;
+.text-left-6.animeToShow {
+  animation: slideLeftToRight 2.25s ease-in forwards;
 }
 
 .slide-2-container.noOp {
   animation: showUpOpacity 0.5s ease-in forwards;
+}
+
+.text-right-1.animeToShow {
+  animation: slideRightToLeft 2s ease-in forwards;
+}
+
+.text-right-2.animeToShow {
+  animation: slideRightToLeft 2.05s ease-in forwards;
+}
+
+.text-right-3.animeToShow {
+  animation: slideRightToLeft 2.1s ease-in forwards;
+}
+
+.text-right-4.animeToShow {
+  animation: slideRightToLeft 2.15s ease-in forwards;
+}
+
+.text-right-5.animeToShow {
+  animation: slideRightToLeft 2.2s ease-in forwards;
+}
+
+.text-right-6.animeToShow {
+  animation: slideRightToLeft 2.25s ease-in forwards;
 }
 
 @keyframes showUpOpacity {
@@ -95,11 +123,30 @@
 
 @keyframes slideLeftToRight {
   0% {
-    /* transform: translateX(-50px); */
-    margin-right: -100px;
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 0.5;
   }
   100% {
-    /* transform: translateX(0px); */
-    margin-right: 0;
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(150vw);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
