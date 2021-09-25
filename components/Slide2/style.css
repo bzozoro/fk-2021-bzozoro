@@ -1,0 +1,105 @@
+.slide-2-container {
+  width: 100%;
+  height: 90vh;
+  background-color: #92c;
+  position: relative;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: url("../../assets/images/bgSlide2.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.infos-s2-container * {
+  color: var(--font-color);
+}
+
+.infos-s2-container {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  display: flex;
+}
+
+.infos-s2-container .infos-s2-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.infos-s2-container .infos-s2-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100;
+  margin-left: 10px;
+}
+
+.infos-s2-container .infos-s2-right span {
+  font-size: 30px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.infos-s2-container .infos-s2-left span {
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.infos-s2-container .infos-s2-left .text-left-1.animeToShow {
+  animation: slideLeftToRight 0.3 forwards;
+}
+
+.infos-s2-container .infos-s2-left .text-left-2.animeToShow {
+  animation: slideLeftToRight 0.6 ease-in forwards;
+}
+
+.infos-s2-container .infos-s2-left .text-left-3.animeToShow {
+  animation: slideLeftToRight 0.9 ease-in forwards;
+}
+
+.infos-s2-container .infos-s2-left .text-left-4.animeToShow {
+  animation: slideLeftToRight 1.2 ease-in forwards;
+}
+
+.infos-s2-container .infos-s2-left .text-left-5.animeToShow {
+  animation: slideLeftToRight 1.5 ease-in forwards;
+}
+
+.infos-s2-container .infos-s2-left .text-left-6.animeToShow {
+  animation: slideLeftToRight 1.8 ease-in forwards;
+}
+
+.slide-2-container.noOp {
+  animation: showUpOpacity 0.5s ease-in forwards;
+}
+
+@keyframes showUpOpacity {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftToRight {
+  0% {
+    /* transform: translateX(-50px); */
+    margin-right: -100px;
+  }
+  100% {
+    /* transform: translateX(0px); */
+    margin-right: 0;
+  }
+}

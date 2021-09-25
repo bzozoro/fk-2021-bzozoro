@@ -28,6 +28,10 @@ var allCSS = [
 
 var allScript = [
   "assets/assets.js",
+  "locales/en.js",
+  "locales/fr.js",
+  "utils/i18n.js",
+  "utils/domListener.js",
   "components/Header/Header.js",
   "components/Slide1/Slide1.js",
   "components/Slide2/Slide2.js",
