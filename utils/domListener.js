@@ -7,13 +7,13 @@ function isScrolledIntoView(el) {
 }
 
 window.onscroll = function () {
-    var slide2 = document.querySelector('.slide-2-container');
+    var slide2 = document.querySelector('.infos-s2-container');
     console.log(isScrolledIntoView(slide2));
     var isAnimatedSlide2 = document.querySelector('.noOp');
     if (isAnimatedSlide2) {
         // 
     } else if (isScrolledIntoView(slide2)) {
-        slide2.classList.add('noOp');
+        document.querySelector('.slide-2-container').classList.add('noOp');
         document.querySelector('.text-left-1').classList.add('animeToShow');
         document.querySelector('.text-left-2').classList.add('animeToShow');
         document.querySelector('.text-left-3').classList.add('animeToShow');
