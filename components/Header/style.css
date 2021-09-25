@@ -245,10 +245,6 @@
     background: url("../../assets/images/header_bg_2.jpg") center center / cover no-repeat;
 }
 
-.test{
-    height: 100vh;
-}
-
 .header-slide-container{
     display: flex;
     width: 100%;

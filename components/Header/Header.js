@@ -52,8 +52,7 @@ function createHeader() {
                 </div>
             </div>
         </div>
-    </div>
-    <div class="test"></div>`;
+    </div>`;
     return header;
   }
   
